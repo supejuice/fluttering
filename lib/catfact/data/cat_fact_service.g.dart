@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'CatFactService.dart';
+part of 'cat_fact_service.dart';
 
 // **************************************************************************
 // RetrofitGenerator

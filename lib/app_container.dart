@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:fluttering/catfact/data/CatFactRepository.dart';
-import 'package:fluttering/catfact/data/CatFactService.dart';
+import 'package:fluttering/catfact/data/cat_fact_repository.dart';
+import 'package:fluttering/catfact/data/cat_fact_service.dart';
 
 class AppContainer {
   late final Dio _dioClient = Dio();

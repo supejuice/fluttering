@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'CatFactDto.g.dart';
+part 'cat_fact_dto.g.dart';
 
 @JsonSerializable()
 class CatFactDto {

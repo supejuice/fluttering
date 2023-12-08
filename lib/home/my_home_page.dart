@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fluttering/catfact/CatFactScreen.dart';
+import 'package:fluttering/catfact/cat_fact_screen.dart';
+
+import '../app_container.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -12,6 +14,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  late var appContainer = AppContainer();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: catFactList()
+        child: CatFacts(appContainer.catFactRepository)
       ),
     );
   }

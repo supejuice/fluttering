@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:fluttering/AppContainer.dart';
-import 'home/MyHomePage.dart';
+import 'package:fluttering/app_container.dart';
+import 'home/my_home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
-  late var appContainer = AppContainer();
+  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override

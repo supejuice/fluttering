@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'CatFactDto.dart';
+part of 'cat_fact_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator

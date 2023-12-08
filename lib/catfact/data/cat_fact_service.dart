@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:fluttering/catfact/data/CatFactDto.dart';
+import 'package:fluttering/catfact/data/cat_fact_dto.dart';
 import 'package:retrofit/http.dart';
 import 'package:retrofit/retrofit.dart';
 
-part 'CatFactService.g.dart';
+part 'cat_fact_service.g.dart';
 
 @RestApi()
 abstract class CatFactService {
