@@ -10,8 +10,15 @@ class CatFacts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-        future: catFactRepository.getCatFacts(),
-        builder: (context, snapshot) => _catFactList(snapshot.data));
+      future: catFactRepository.getCatFacts(),
+      builder: (context, snapshot) => MaterialApp(
+          home: Scaffold(
+        appBar: AppBar(
+            backgroundColor: Theme.of(context).colorScheme.background,
+            title: const Text("Cat Facts")),
+        body: Center(child: _catFactList(snapshot.data)),
+      )),
+    );
   }
 
   ListView _catFactList(List<String>? facts) {
